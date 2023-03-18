@@ -1,0 +1,38 @@
+verilen dizi: [16,21,11,8,12,22]
+
+Merge Sort işlemini gerçekleştirme:
+
+Diziyi ortadan ayırma ayırma: Sol dizi: [16,21,11] Sağ dizi: [8,12,22]
+
+Sol ve sağ dizileri ayrı ayrı Merge Sort'a tabi tutma: Sol dizi:
+
+Sol dizi: [16,21]
+Sağ dizi: [11]
+Sol diziyi tekrar Merge Sort'a gönderme:
+Sol dizi: [16]
+Sağ dizi: [21]
+Sol ve sağ dizileri birleştirme: [16,21]
+Sağ diziyi tekrar Merge Sort'a gönderme:
+Sol dizi: [11]
+Sağ dizi: []
+Sol ve sağ dizileri birleştirme: [11]
+Sol ve sağ dizileri birleştirme: [11,16,21] Sağ dizi:
+Sol dizi: [8,12]
+Sağ dizi: [22]
+Sol diziyi tekrar Merge Sort'a gönderme:
+Sol dizi: [8]
+Sağ dizi: [12]
+Sol ve sağ dizileri birleştirme: [8,12]
+Sağ diziyi tekrar Merge Sort'a gönderme:
+Sol dizi: [22]
+Sağ dizi: []
+Sol ve sağ dizileri birleştirme: [22]
+Sol ve sağ dizileri birleştirme: [8,12,22]
+Sıralanmış sol ve sağ dizileri birleştirme:
+
+Sol dizi: [11,16,21]
+Sağ dizi: [8,12,22]
+Sol ve sağ dizileri birleştirme: [8, 11, 12, 16, 21, 22]
+Dizi Merge Sort tutması Kullanıldığında sıralandığında [8, 11, 12, 16, 21, 22] şeklinde sıralanır.
+
+Merge Sort'un Big-O gösterimi O(n log n)'dir.
