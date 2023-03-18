@@ -1,0 +1,21 @@
+Verilen dizi: [22,27,16,2,18,6]
+
+Insertion Sort işlemi aşamaları:
+
+27, 22'den büyük olduğu için yer değiştirme yapılmaz. [22,27,16,2,18,6]
+16, 27'den küçük olduğu için 27 sağa kaydırılır, 22, 16'dan büyük olduğu için yer değiştirme yapılmaz. [16,22,27,2,18,6]
+2, 27'den küçük olduğu için 27, 22'den küçük olduğu için 22 ve 16'dan küçük olduğu için 16 sağa kaydırılır, 2, en başa yerleştirilir. [2,16,22,27,18,6]
+18, 27'den küçük olduğu için 27, 22'den büyük olduğu için yer değiştirme yapılmaz. 22, 18'den büyük olduğu için yer değiştirme yapılır. [2,16,18,27,22,6]
+6, 27'den küçük olduğu için 27, 22'den küçük olduğu için 22, 18'den büyük olduğu için yer değiştirme yapılmaz. 16, 6'dan büyük olduğu için yer değiştirme yapılır. [2,6,16,18,27,22]
+Dizi Insertion Sort algoritması kullanılarak sıralandığında [2,6,16,18,22,27] şeklinde sıralanır.
+
+Insertion Sort'un Big-O gösterimi O(n^2)'dir.
+
+Dizi sıralandıktan sonra 18 sayısı 4. elemandır ve 2. while döngüsündeki 22 sayısından küçük, 3. while döngüsündeki 16 sayısından büyüktür. Bu nedenle 18 sayısı 2. ve 3. elemanlar arasına yerleştirilir.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımı:
+
+En küçük eleman 2 olduğu için 2, ilk elemanla yer değiştirilir. [2,3,5,8,7,9,4,15,6]
+En küçük eleman 3 olduğu için 3, 2. elemanla yer değiştirilmez. [2,3,5,8,7,9,4,15,6]
+En küçük eleman 4 olduğu için 4, 3. elemanla yer değiştirilir. [2,3,4,8,7,9,5,15,6]
+En küçük eleman 5 olduğu için 5, 4. elemanla yer değiştirilir. [2,3,4,5,7,9,8,15,6]
